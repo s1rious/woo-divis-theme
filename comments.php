@@ -26,10 +26,8 @@ if (post_password_required()) {
             </ol>
 
             <?php the_comments_navigation(); ?>
-
     </div>
-
-        <?php else : // this is displayed if there are no comments so far ?>
+        <?php else : ?q>
 
         <?php if ('open' == $post->comment_status) : ?>
         <!-- If comments are open, but there are no comments. -->
