@@ -1,14 +1,23 @@
 <?php 
-
+/**
+ * If the current post is protected by a password and
+ * the visitor has not yet entered the password we will
+ * return early without loading the commend
+ */
 if (post_password_required()) {
     return;
 }
 
 ?>
+
     <?php
+
+        // Do not delete these lines
         if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
         die ('Please do not load this page directly. Thanks!');
         ?>
+
+        <!-- You can start editing here. -->
     <div id="comment-area">
         <?php if ( have_comments() ) : ?>
 
@@ -28,17 +37,8 @@ if (post_password_required()) {
             <?php the_comments_navigation(); ?>
 
     </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <?php else : ?>
-=======
 
         <?php else : // this is displayed if there are no comments so far ?>
->>>>>>> parent of cc47b57... 1.0.7
-=======
-
-        <?php else : // this is displayed if there are no comments so far ?>
->>>>>>> parent of cc47b57... 1.0.7
 
         <?php if ('open' == $post->comment_status) : ?>
         <!-- If comments are open, but there are no comments. -->
