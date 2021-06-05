@@ -29,7 +29,12 @@ if (post_password_required()) {
 
     </div>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <?php else : ?>
+=======
+
+        <?php else : // this is displayed if there are no comments so far ?>
+>>>>>>> parent of cc47b57... 1.0.7
 =======
 
         <?php else : // this is displayed if there are no comments so far ?>
