@@ -2,7 +2,7 @@
 ![screenshot](https://user-images.githubusercontent.com/58982535/112156957-ca2c0e80-8bf7-11eb-9c95-b27e18679009.png)
 
 
-Plugins which i used:
+The plugins i used:
 
 WooCommerce
 
